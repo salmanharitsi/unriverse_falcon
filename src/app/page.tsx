@@ -1,11 +1,12 @@
 import { BackgroundBeams } from "@/components/ui/background-beams";
 import { FlipWords } from "@/components/ui/flip-words";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 import Image from "next/image";
 
 export default function Home() {
   const words = ["faster", "knowledge", "different", "modern"];
-
+  const footer = `made by ©unriverse 2024`;
   return (
     <main className="flex h-screen w-screen flex-col items-center justify-between p-24 overflow-hidden">
       <div className="h-[40rem] min-w-96 flex flex-col gap-5 justify-center items-start px-4">
@@ -23,6 +24,7 @@ export default function Home() {
           <span>Start Scan</span>
         </HoverBorderGradient>
       </div>
+      <TextGenerateEffect words={footer} />
       <BackgroundBeams />
     </main>
   );
